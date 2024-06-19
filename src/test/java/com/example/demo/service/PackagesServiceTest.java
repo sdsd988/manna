@@ -133,10 +133,12 @@ public class PackagesServiceTest {
                 .filename("image4.png")
                 .type("PKG")
                 .build();
+
+        long updateTrackingNo = 333322221111L;
         List<PackageImg> updateImgs = List.of(img3, img4);
 
         PackagesUpdateRequestDto updatePackageRequest = PackagesUpdateRequestDto.builder()
-                .trackingNo(333322221111L)
+                .trackingNo(updateTrackingNo)
                 .images(updateImgs)
                 .build();
 
@@ -148,7 +150,13 @@ public class PackagesServiceTest {
                 .orElseThrow(() -> new PackageException(PACKAGE_NOT_EXIST, "존재하지 않는 패키지입니다."));
 
         assertEquals(updatePackageRequest.trackingNo(),updatePackage.getTrackingNo());
-        assertThat(updatePackage.getImages()).contains(img3, img4);
+        for (int i = 0; i < updatePackage.getImages().size(); i++) {
+            PackageImg expected = updatePackage.getImages().get(i);
+            PackageImg actual = updateImgs.get(i);
+
+            Assertions.assertEquals(expected.getFilename(), actual.getFilename());
+            Assertions.assertEquals(expected.getType(), actual.getType());
+        }
     }
 
     @Test
