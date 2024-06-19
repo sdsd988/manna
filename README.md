@@ -32,9 +32,14 @@
 
 #### Result
 
+##### 테스트 코드 결과
+
+![img_9.png](img_9.png)
+
+##### Postman을 통한 테스트
+
 - 패키지 생성
-![img_1.png](img_1.png)
-- 패키지 조회
+![img_1.png](img_1.png)트
 ![img_3.png](img_3.png)
 
 - 패키지 수정
@@ -51,6 +56,8 @@
   ![img_8.png](img_8.png)
     - 존재하지 않는 패키지 수정
   ![img_7.png](img_7.png)
+
+
 
 
 
