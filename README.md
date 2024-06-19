@@ -8,7 +8,7 @@
 
 ### ERD
 ![img_6.png](img_6.png)
-₩
+
 ### Tech Stack
 
 #### Server
@@ -28,6 +28,8 @@
 - docker-compose 파일을 통해 local, test DB 환경을 설정할 수 있도록 작성하였습니다.
 - 서비스 계층의 테스트 코드 작성을 통해 코드를 검증하였습니다.
 
+
+
 #### Result
 
 - 패키지 생성
@@ -46,7 +48,7 @@
 
 - 예외 처리
     - 존재하지 않는 패키지 조회
-  ![img.png](img.png)
+  ![img_8.png](img_8.png)
     - 존재하지 않는 패키지 수정
   ![img_7.png](img_7.png)
 
