@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.demo.service.PackagesServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-06-19T12:32:50" hostname="jeongsang-yun-ui-MacBookAir.local" time="1.244">
+<testsuite name="com.example.demo.service.PackagesServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-06-19T12:54:58" hostname="jeongsang-yun-ui-MacBookAir.local" time="0.837">
   <properties/>
-  <testcase name="성공 : Package 생성" classname="com.example.demo.service.PackagesServiceTest" time="1.123"/>
-  <testcase name="성공 : 패키지 삭제" classname="com.example.demo.service.PackagesServiceTest" time="0.067"/>
-  <testcase name="성공 : Package 수정" classname="com.example.demo.service.PackagesServiceTest" time="0.009"/>
-  <testcase name="실패 : 존재하지 않는 Package 수정 시도" classname="com.example.demo.service.PackagesServiceTest" time="0.012"/>
-  <testcase name="실패 : 존재하지 않는 Package 조회 시도" classname="com.example.demo.service.PackagesServiceTest" time="0.009"/>
-  <testcase name="성공 : Package 조회" classname="com.example.demo.service.PackagesServiceTest" time="0.009"/>
+  <testcase name="성공 : Package 생성" classname="com.example.demo.service.PackagesServiceTest" time="0.704"/>
+  <testcase name="성공 : 패키지 삭제" classname="com.example.demo.service.PackagesServiceTest" time="0.071"/>
+  <testcase name="성공 : Package 수정" classname="com.example.demo.service.PackagesServiceTest" time="0.01"/>
+  <testcase name="실패 : 존재하지 않는 Package 수정 시도" classname="com.example.demo.service.PackagesServiceTest" time="0.014"/>
+  <testcase name="실패 : 존재하지 않는 Package 조회 시도" classname="com.example.demo.service.PackagesServiceTest" time="0.012"/>
+  <testcase name="성공 : Package 조회" classname="com.example.demo.service.PackagesServiceTest" time="0.011"/>
   <testcase name="실패 : 존재하지 않는 패키지 삭제 시도" classname="com.example.demo.service.PackagesServiceTest" time="0.008"/>
-  <system-out><![CDATA[21:32:47.016 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.service.PackagesServiceTest]: PackagesServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-21:32:47.109 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.PackageApplication for test class com.example.demo.service.PackagesServiceTest
+  <system-out><![CDATA[21:54:54.850 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.service.PackagesServiceTest]: PackagesServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:54:54.982 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.PackageApplication for test class com.example.demo.service.PackagesServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -19,21 +19,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.6)
 
-2024-06-19T21:32:47.550+09:00  INFO 5329 --- [    Test worker] c.e.demo.service.PackagesServiceTest     : Starting PackagesServiceTest using Java 17.0.7 with PID 5329 (started by jeongsang-yun in /Users/jeongsang-yun/Documents/GitHub/manna)
-2024-06-19T21:32:47.551+09:00  INFO 5329 --- [    Test worker] c.e.demo.service.PackagesServiceTest     : No active profile set, falling back to 1 default profile: "default"
-2024-06-19T21:32:48.054+09:00  INFO 5329 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19T21:32:48.094+09:00  INFO 5329 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
-2024-06-19T21:32:48.371+09:00  INFO 5329 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-19T21:32:48.514+09:00  INFO 5329 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:59dfc979-6300-4310-8b55-0ee03a007400 user=SA
-2024-06-19T21:32:48.515+09:00  INFO 5329 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-19T21:32:48.549+09:00  INFO 5329 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19T21:32:48.597+09:00  INFO 5329 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
-2024-06-19T21:32:48.626+09:00  INFO 5329 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-19T21:32:48.856+09:00  INFO 5329 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19T21:32:49.692+09:00  INFO 5329 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-19T21:32:49.728+09:00  INFO 5329 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19T21:32:50.018+09:00  WARN 5329 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19T21:32:50.296+09:00  INFO 5329 --- [    Test worker] c.e.demo.service.PackagesServiceTest     : Started PackagesServiceTest in 3.001 seconds (process running for 4.025)
+2024-06-19T21:54:55.366+09:00  INFO 8603 --- [    Test worker] c.e.demo.service.PackagesServiceTest     : Starting PackagesServiceTest using Java 17.0.7 with PID 8603 (started by jeongsang-yun in /Users/jeongsang-yun/Documents/GitHub/manna)
+2024-06-19T21:54:55.367+09:00  INFO 8603 --- [    Test worker] c.e.demo.service.PackagesServiceTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-19T21:54:55.971+09:00  INFO 8603 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-19T21:54:56.017+09:00  INFO 8603 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-06-19T21:54:56.379+09:00  INFO 8603 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-19T21:54:56.550+09:00  INFO 8603 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:082b1b90-4008-4250-887c-794bf509f6f7 user=SA
+2024-06-19T21:54:56.551+09:00  INFO 8603 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-19T21:54:56.595+09:00  INFO 8603 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-19T21:54:56.649+09:00  INFO 8603 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-19T21:54:56.676+09:00  INFO 8603 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-19T21:54:56.846+09:00  INFO 8603 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-19T21:54:57.528+09:00  INFO 8603 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-19T21:54:57.560+09:00  INFO 8603 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-19T21:54:57.833+09:00  WARN 8603 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-19T21:54:58.128+09:00  INFO 8603 --- [    Test worker] c.e.demo.service.PackagesServiceTest     : Started PackagesServiceTest in 3.011 seconds (process running for 3.954)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
