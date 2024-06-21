@@ -17,7 +17,7 @@
 
 #### DataBase
 
-- Mysql, H2
+- local : Mysql, test : H2
 
 #### Etc
 
